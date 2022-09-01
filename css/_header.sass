@@ -1,0 +1,69 @@
+#header
+    display: flex
+    align-items: center
+    justify-content: center
+    top: 0
+    left: 0
+    z-index: 1
+    background: rgba($color-a, 0.6)
+    height: 80px
+    position: fixed
+    width: 100%
+    transition-duration: $transition-duration
+
+    &.scroll
+        height: 40px
+
+        .content .logo
+            height: 40px
+
+        .btn.cta.phantom
+            padding: 5px 20px
+
+    .content
+        display: flex
+        align-items: center
+        justify-content: space-between
+    
+        .logo
+            height: 80px
+            width: auto
+            transition-duration: $transition-duration
+        
+            img
+                height: 100%
+                width: auto
+                filter: invert(1)
+
+        nav
+            margin: 0
+            padding: 0
+
+            ul
+                margin: 0
+                padding: 0
+                margin-left: 50px
+                display: flex
+                align-items: center
+                justify-content: center
+
+                li
+                    list-style: none
+
+                    a
+                        margin-left: 15px
+                        display: inline-block
+                        font-size: 14px
+                        transition-duration: $transition-duration
+                        color: $color-b
+
+                        &:not(.cta)
+                            padding: 5px
+                            border-bottom: 2px solid rgba($color-c, 0)
+
+                        &:hover
+                            border-bottom: 2px solid $color-c
+
+
+        button.btn.display
+            display: none
